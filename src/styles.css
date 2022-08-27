@@ -1,0 +1,101 @@
+.container {
+  display: block;
+  margin: 20px auto;
+  padding: 20px 5px;
+  border: 1px solid #197aca;
+  border-radius: 3px;
+  background: linear-gradient(to top, #f3eea4 0%, #95c9f6 100%);
+  max-width: 50%;
+}
+header {
+  text-align: center;
+}
+h1,
+h2,
+h4 {
+  color: #197aca;
+}
+h1,
+h2 {
+  font-weight: bolder;
+}
+h3,
+h4 {
+  font-style: italic;
+  font-weight: 400;
+}
+h4 {
+  text-transform: capitalize;
+}
+h3 {
+  color: #606674;
+}
+.this-day {
+  margin: 10px 10px;
+}
+.partly-cloudy-icon {
+  color: #197aca;
+  font-size: 30px;
+}
+.search-city {
+  border-color: #197aca;
+  border-radius: 3px;
+  background: transparent;
+  font-style: italic;
+}
+.search-btn {
+  border-color: #197aca;
+  border-radius: 3px;
+  background: #197aca;
+}
+.current-location-button {
+  color: #fff;
+  border-color: #197aca;
+  border-radius: 3px;
+  background: #197aca;
+  display: inline;
+  margin-bottom: 127px;
+}
+.humidity-wind {
+  text-align: left;
+  font-style: italic;
+  font-weight: 550;
+  color: #197aca;
+  position: relative;
+  top: 0px;
+}
+.temp {
+  font-size: 23px;
+}
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #197aca;
+}
+a:hover {
+  text-decoration: underline;
+}
+.next-days {
+  margin: 20px 36px;
+  width: 110%;
+}
+.card {
+  border-color: #197aca;
+  border-radius: 3px;
+  background: transparent;
+}
+.weather-icons {
+  color: #197aca;
+  font-size: 20px;
+}
+.card-text {
+  text-align: center;
+  color: #606674;
+  font-style: italic;
+  font-weight: 450;
+}
+.card-title {
+  text-align: center;
+  color: #197aca;
+  font-weight: bolder;
+}
