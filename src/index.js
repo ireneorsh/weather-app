@@ -17,8 +17,6 @@ let date = document.querySelector("#date");
 
 date.innerHTML = formatDate(currentDate);
 
-//new week
-
 function searchCity(event) {
   event.preventDefault();
   let city = document.querySelector("#cityName").value;
@@ -41,6 +39,11 @@ function showCurrentCityWeather(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
+  );
+  let icon = document.querySelector("#weatherIcon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   console.log(response.data);
 }
