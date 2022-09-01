@@ -20,44 +20,48 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <div class="row this-day">
-          <div class="col-4">
-            <form id="formCity">
-              <input
-                type="text"
-                placeholder="Search city"
-                class="search-city"
-                id="cityName"
-                autocomplete="off"
-                autofocus="on"
-              />
-              <input type="submit" value="🔎" class="search-btn" />
-            </form>
-          </div>
-          <div class="col-4 humidity-wind">
-            <button class="current-location-button">Current Location</button>
-            <div>Humidity: <span id="humidity">68</span>%</div>
-            <div>Wind: <span id="wind">12</span> km/h</div>
-          </div>
-          <div class="col-4">
-            <h3 id="date">Mon</h3>
-            <h1 id="city">Kyiv</h1>
+      <div class="city-input">
+        <form id="formCity">
+          <input
+            type="text"
+            placeholder="Search city..."
+            class="search-city"
+            id="cityName"
+            autocomplete="off"
+            autofocus="on"
+          />
+          <input type="submit" value="Search" class="search-btn" />
+        </form>
+        <button class="current-location-button">Current Location</button>
+      </div>
+      <div class="row current-day">
+        <div class="col-sm-6 current-day-1">
+          <h1 id="city">Kyiv</h1>
+          <ul>
+            <li class="date" id="date">Mon</li>
+            <li class="description" id="description">Partly cloudy</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 current-day-2">
+          <div class="icon-and-temp">
             <i
               class="fa-solid fa-cloud-sun partly-cloudy-icon"
               id="weather-icon"
             ></i>
-            <h4 id="description">Partly cloudy</h4>
-            <h2>
-              <span id="temperature"> 23 / 26</span
-              ><span class="temp"
-                ><a href="#" id="celsius-link"> °C</a> |
-                <a href="#" id="fahrenheit-link">°F</a></span
-              >
-            </h2>
+            <span id="temperature" class="temp"> 27</span
+            ><span class="units"
+              ><a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a></span
+            >
           </div>
+
+          <ul class="humidity-wind">
+            <li>Humidity: <span id="humidity">68</span>%</li>
+            <li>Wind: <span id="wind">12</span> km/h</li>
+          </ul>
         </div>
-      </header>
+      </div>
       <div class="row next-days">
         <div class="col-sm-2">
           <div class="card">
@@ -111,16 +115,18 @@
           </div>
         </div>
       </div>
+      <hr />
+      <small class="open-src-code">
+        <a
+          class="open-src-code-link"
+          href="https://github.com/ireneorsh/weather-app"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Iryna Orshak
+      </small>
     </div>
-    <p class="open-source-code">
-      <a
-        class="open-src-code-link"
-        href="https://github.com/ireneorsh/weather-app"
-        target="_blank"
-        >Open-source code</a
-      >
-      by Iryna Orshak
-    </p>
+
     <script src="src/index.js"></script>
   </body>
 </html>

@@ -1,91 +1,127 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .container {
   display: block;
-  margin: 20px auto 0px auto;
-  padding: 20px 5px;
-  border: 1px solid #197aca;
-  border-radius: 3px;
-  background: linear-gradient(to top, #f3eea4 0%, #95c9f6 100%);
-  max-width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #9ed9c5;
+  max-width: 750px;
 }
-header {
-  text-align: center;
-}
-h1,
-h2,
-h4 {
-  color: #197aca;
-}
-h1,
-h2 {
-  font-weight: bolder;
-}
-h3,
-h4 {
-  font-style: italic;
-  font-weight: 400;
-}
-h4 {
-  text-transform: capitalize;
-}
-h3 {
-  color: #606674;
-}
-.this-day {
-  margin: 10px 10px;
-}
-.partly-cloudy-icon {
-  color: #197aca;
-  font-size: 30px;
+.city-input {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 50px;
+  max-width: 500px;
 }
 .search-city {
-  border-color: #197aca;
-  border-radius: 3px;
-  background: transparent;
+  border: none;
+  border-radius: 6px;
+  background: #c7f2e3;
   font-style: italic;
+  font-size: 16px;
+  padding: 5px 10px;
 }
 .search-btn {
-  border-color: #197aca;
-  border-radius: 3px;
-  background: #197aca;
+  color: #c7f2e3;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background: #20615b;
+  padding: 5px 10px;
+}
+.search-btn:hover {
+  background-color: #0a5149;
+  transition: all 2s ease-in-out;
 }
 .current-location-button {
-  color: #fff;
-  border-color: #197aca;
-  border-radius: 3px;
-  background: #197aca;
-  display: inline;
-  margin-bottom: 127px;
+  color: #20615b;
+  border: 1px solid #20615b;
+  border-radius: 6px;
+  background: #9ed9c5;
+  margin: 0 5px;
+  padding: 5px 10px;
 }
-.humidity-wind {
+.current-day {
+  margin: 20px 50px;
+}
+.current-day-1 {
   text-align: left;
-  font-style: italic;
-  font-weight: 550;
-  color: #197aca;
-  position: relative;
-  top: 0px;
+}
+.current-day-2 {
+  text-align: right;
+}
+h1,
+.description {
+  color: #20615b;
+}
+h1 {
+  font-weight: bolder;
+}
+.date,
+.description {
+  font-weight: 400;
+  font-size: 25px;
+}
+.description {
+  text-transform: capitalize;
+}
+.date {
+  color: #606674;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.icon-and-temp {
+  font-size: large;
+}
+.partly-cloudy-icon {
+  color: #20615b;
+  font-size: 50px;
 }
 .temp {
-  font-size: 23px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #20615b;
 }
+.units {
+  color: #20615b;
+  font-size: 25px;
+  font-weight: 400;
+}
+.humidity-wind {
+  margin-top: 20px;
+  font-weight: 550;
+  color: #20615b;
+}
+
 a {
   text-decoration: none;
   font-size: 25px;
-  color: #197aca;
+  color: #20615b;
 }
 a:hover {
-  text-decoration: underline;
+  color: #0a5149;
+  font-weight: 550;
 }
 .next-days {
   margin: 20px 36px;
   width: 110%;
 }
 .card {
-  border-color: #197aca;
-  border-radius: 3px;
-  background: transparent;
+  border: none;
+  border-radius: 6px;
+  background: #c7f2e3;
+  max-width: 350px;
 }
 .weather-icons {
-  color: #197aca;
+  color: #20615b;
   font-size: 20px;
 }
 .card-text {
@@ -96,18 +132,18 @@ a:hover {
 }
 .card-title {
   text-align: center;
-  color: #197aca;
+  color: #20615b;
   font-weight: bolder;
 }
-.open-source-code {
+small {
+  padding: 0 auto;
+  margin: 0 auto;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  position: relative;
-  right: 280px;
 }
 .open-src-code-link {
   font-size: 14px;
+}
+.open-src-code-link:hover {
+  color: #0a5149;
+  text-decoration: underline;
 }
