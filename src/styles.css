@@ -105,11 +105,6 @@ li {
   position: relative;
   top: -10px;
 }
-.humidity-wind {
-  margin-top: 20px;
-  font-weight: 550;
-  color: #20615b;
-}
 
 .units a {
   text-decoration: none;
@@ -118,6 +113,19 @@ li {
 .units a:hover {
   color: #0a5149;
   font-weight: 550;
+}
+.units .active {
+  color: #20615b;
+  cursor: default;
+}
+.units .active:hover {
+  text-decoration: none;
+  font-weight: 400;
+}
+.humidity-wind {
+  margin-top: 20px;
+  font-weight: 550;
+  color: #20615b;
 }
 .next-days {
   margin: 20px 36px;
