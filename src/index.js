@@ -40,6 +40,8 @@ function showCurrentCityWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  let country = document.querySelector("#country");
+  country.innerHTML = response.data.sys.country;
   celsiusTemperature = response.data.main.temp;
   let icon = document.querySelector("#weatherIcon");
   icon.setAttribute(

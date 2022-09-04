@@ -55,12 +55,16 @@ body {
   text-align: right;
 }
 h1,
-.description {
+.description,
+.country {
   color: #20615b;
 }
 h1 {
   font-weight: bolder;
+  margin: 0;
+  padding: 0;
 }
+
 .date,
 .description {
   font-weight: 400;
@@ -81,6 +85,8 @@ li {
 }
 .icon-and-temp {
   font-size: large;
+  margin: 0;
+  padding: 0;
 }
 .partly-cloudy-icon {
   color: #20615b;
