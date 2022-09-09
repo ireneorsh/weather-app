@@ -75,6 +75,7 @@ h1 {
 }
 .date {
   color: #606674;
+  font-style: italic;
 }
 ul {
   margin: 0;
@@ -127,7 +128,7 @@ li {
   font-weight: 550;
   color: #20615b;
 }
-.next-days {
+.forecast {
   margin: 20px 36px;
   width: 110%;
 }
@@ -139,18 +140,24 @@ li {
 }
 .weather-icons {
   color: #20615b;
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 20px 10px 25px;
 }
-.card-text {
+.forecast-date {
   text-align: center;
   color: #606674;
   font-style: italic;
   font-weight: 450;
+  margin-bottom: 10px;
 }
-.card-title {
+.forecast-temp {
   text-align: center;
   color: #20615b;
-  font-weight: bolder;
+  font-weight: 545;
+}
+.forecast-temp-min {
+  opacity: 0.6;
 }
 small {
   padding: 0 auto;
