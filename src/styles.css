@@ -139,22 +139,22 @@ li {
   max-width: 350px;
 }
 .weather-icons {
-  color: #20615b;
-  font-size: 25px;
-  text-align: center;
-  margin: 0 20px 10px 25px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
 }
 .forecast-date {
   text-align: center;
   color: #606674;
   font-style: italic;
   font-weight: 450;
-  margin-bottom: 10px;
+  margin: 0;
 }
 .forecast-temp {
   text-align: center;
   color: #20615b;
   font-weight: 545;
+  margin: 0;
 }
 .forecast-temp-min {
   opacity: 0.6;
