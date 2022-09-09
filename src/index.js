@@ -76,6 +76,36 @@ function showCelsiusTemp(event) {
   fahrenheitLink.classList.remove("active");
 }
 
+function showForecast() {
+  let forecast = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <p class="forecast-date" id="forecastDate1">${day}</p>
+              <div>
+                <img
+                  src=""
+                  class="fa-solid fa-cloud-sun weather-icons"
+                  id="iconForecast1"
+                />
+              </div>
+              <h5 class="forecast-temp" id="forecastTemp1">
+                <span class="forecast-temp-max">28° </span
+                ><span class="forecast-temp-min">20°</span>
+              </h5>
+            </div>
+          </div>
+        </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
+
 let celsiusTemperature = null;
 
 let currentDate = new Date();
@@ -95,3 +125,5 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 search("Kyiv");
+
+showForecast();
